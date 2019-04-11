@@ -1,5 +1,11 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  tagName: ''
+  tagName: '',
+
+  actions: {
+    changeQP() {
+      this.toggleProperty('controller.ok');
+    }
+  }
 });
